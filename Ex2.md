@@ -1,12 +1,10 @@
 # Ex.No:2  
-# Ex.Name: Function Overloading – Sum of Two and Three Integers  
+# Ex.Name: Circularly Singly Linked List - Delete an element from the FRONT  
 
 ## Date:  
 
 ## Aim:  
-To write a C++ program that overloads a function to perform:  
-- Sum of two integers  
-- Sum of three integers  
+Write a CPP program to DELETE an element from the FRONT in a Circularly Singly Linked List and Display the same.
 
 ## Algorithm:  
 1. Start the program.  
@@ -21,40 +19,70 @@ To write a C++ program that overloads a function to perform:
 
 ## Program:
 ```cpp
-#include <iostream>
+#include<iostream>
 using namespace std;
-
-class Sum {
-public:
-    int add(int a, int b) {
-        return a + b;
+class node
+{
+    public:
+    int value;
+    node*next;
+}*head,*tail,*temp,*newnode;
+void deletenode()
+{
+    head=head->next;
+    tail->next=head;
+}
+void create(int data)
+{
+    newnode=new node();
+    newnode->value=data;
+    newnode->next=NULL;
+    if(head==NULL)
+    {
+        head=newnode;
+        tail=newnode;
     }
-    int add(int a, int b, int c) {
-        return a + b + c;
+    else
+    {
+        tail->next=newnode;
+        tail=newnode;
+        tail->next=head;
     }
-};
-
-int main() {
-    int a, b, c;
-    cin >> a >> b >> c;
-
-    Sum s;
-    cout << "Sum of two Numbers=" << s.add(a, b) << endl;
-    cout << "Sum of three Numbers=" << s.add(a, b, c) << endl;
-
-    return 0;
+}
+void display()
+{
+    temp=head;
+    while(temp->next!=head)
+    {
+        cout<<"Data = "<<temp->value<<" ";
+        temp=temp->next;
+    }
+    cout<<"Data = "<<temp->value<<" ";
+}
+int main()
+{
+    int data;
+    for(int i=0;i<5;i++)
+    {
+        cin>>data;
+        create(data);
+    }
+    display();
+    deletenode();
+    cout<<endl;
+    display();
 }
 ```
 
 ## Output:
+<img width="1174" height="507" alt="image" src="https://github.com/user-attachments/assets/a94845ec-8dbb-4ee6-8910-18c53f41ce7e" />
+
+## Result:
 ```
 Input:
-10 20 30
+10 20 30 40 50
 
 Output:
-Sum of two Numbers=30
-Sum of three Numbers=60
+Data = 10 Data = 20 Data = 30 Data = 40 Data = 50 
+Data = 20 Data = 30 Data = 40 Data = 50
 ```
-## Result:
-<img width="868" height="508" alt="image" src="https://github.com/user-attachments/assets/d360a256-1f28-4838-8d75-48465d40abdc" />
-
