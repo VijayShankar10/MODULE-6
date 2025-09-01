@@ -42,6 +42,9 @@ void subPolynomials(Node *head1, Node *head2)
 ```
 
 ## Output:
+<img width="875" height="411" alt="image" src="https://github.com/user-attachments/assets/9896e5e5-f865-4e52-8183-f44e2ab215a7" />
+
+## Result:
 ```
 Linked List
  5x^2 4x^1
@@ -50,6 +53,3 @@ Linked List
 Difference :
  -1x^2  0x^1
 ```
-## Result:
-<img width="875" height="411" alt="image" src="https://github.com/user-attachments/assets/9896e5e5-f865-4e52-8183-f44e2ab215a7" />
-
