@@ -58,10 +58,11 @@ int main() {
     return 0;
 }
 ```
+
 ## Output:
+<img width="881" height="314" alt="image" src="https://github.com/user-attachments/assets/45d9b978-0caa-4e68-8eb1-ae8e451280f7" />
+
+## Result:
 ```
 The forward list operation: 10 20 30 40 50
 ```
-## Result:
-<img width="881" height="314" alt="image" src="https://github.com/user-attachments/assets/45d9b978-0caa-4e68-8eb1-ae8e451280f7" />
-
