@@ -51,6 +51,9 @@ int main() {
 ```
 
 ## Output:
+<img width="865" height="449" alt="image" src="https://github.com/user-attachments/assets/996a5499-5036-46f5-bc29-7aa8a74144d2" />
+
+## Result:
 ```
 Input:
 10 20 30 40 50
@@ -60,6 +63,3 @@ Output:
 List before removing elements: 10 20 30 40 50
 List after removing elements: 10 20 40 50
 ```
-## Result:
-<img width="865" height="449" alt="image" src="https://github.com/user-attachments/assets/996a5499-5036-46f5-bc29-7aa8a74144d2" />
-
