@@ -85,7 +85,11 @@ int main() {
     return 0;
 }
 ```
+
 ## Output:
+<img width="885" height="451" alt="image" src="https://github.com/user-attachments/assets/cbe98852-2b10-4b21-a272-d34a15604077" />
+
+## Result:
 ```
 Input:
 10 20 30 40 50
@@ -96,6 +100,3 @@ Output:
 Data = 10 Data = 20 Data = 30 Data = 40 Data = 50 
 Data = 10 Data = 20 Data = 30 Data = 24 Data = 50
 ```
-## Result:
-<img width="885" height="451" alt="image" src="https://github.com/user-attachments/assets/cbe98852-2b10-4b21-a272-d34a15604077" />
-
